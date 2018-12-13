@@ -104,20 +104,41 @@
 
 
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="#【创新APP】Spring、Typhone、Firebase 等框架考察[TOC] 前言针对创新APP框架中的Service层的设计，研究了几款 IOC 框架（Service框架）。并尝试对两款 IOC 框架的 生命周期管理、循环引用处理、配置方式等能力做了对比分析（见本文“对比能力”部分）。希望对 Service 的设计有所帮助。周一(12.10日)上午晨会时，已经和 haven、kelvin">
+<meta property="og:type" content="article">
 <meta property="og:title" content="理查德的编码之道">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase 等框架考察/index.html">
 <meta property="og:site_name" content="理查德的编码之道">
+<meta property="og:description" content="#【创新APP】Spring、Typhone、Firebase 等框架考察[TOC] 前言针对创新APP框架中的Service层的设计，研究了几款 IOC 框架（Service框架）。并尝试对两款 IOC 框架的 生命周期管理、循环引用处理、配置方式等能力做了对比分析（见本文“对比能力”部分）。希望对 Service 的设计有所帮助。周一(12.10日)上午晨会时，已经和 haven、kelvin">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-10-16-52-16.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-09-16-41-55.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-09-16-18-06.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-09-17-37-34.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-09-17-42-58.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-09-17-58-52.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-10-16-52-16.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-09-18-26-21.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-09-18-26-31.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-05-15-54-17.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-05-15-55-24.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-05-15-59-18.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-05-15-59-35.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-06-15-57-23.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-05-16-06-50.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-09-18-18-55.jpg">
+<meta property="og:updated_time" content="2018-12-12T04:43:38.645Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="理查德的编码之道">
+<meta name="twitter:description" content="#【创新APP】Spring、Typhone、Firebase 等框架考察[TOC] 前言针对创新APP框架中的Service层的设计，研究了几款 IOC 框架（Service框架）。并尝试对两款 IOC 框架的 生命周期管理、循环引用处理、配置方式等能力做了对比分析（见本文“对比能力”部分）。希望对 Service 的设计有所帮助。周一(12.10日)上午晨会时，已经和 haven、kelvin">
+<meta name="twitter:image" content="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase%20等框架考察/_image/2018-12-10-16-52-16.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/13/【创新APP】Spring、Typhone、Firebase 等框架考察/">
 
 
 
@@ -127,7 +148,7 @@
   };
 </script>
 
-  <title>理查德的编码之道</title>
+  <title> | 理查德的编码之道</title>
   
 
 
@@ -175,8 +196,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -217,7 +237,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -279,9 +299,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -314,9 +334,7 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/12/13/【创新APP】Spring、Typhone、Firebase 等框架考察/" class="post-title-link" itemprop="http://yoursite.com/index.html">Unbenannt</a>
+
               
             
           </h1>
@@ -391,9 +409,7 @@
       
 
       
-        
-          
-            <p>#【创新APP】Spring、Typhone、Firebase 等框架考察<br>[TOC]</p>
+        <p>#【创新APP】Spring、Typhone、Firebase 等框架考察<br>[TOC]</p>
 <h2><span id="前言">前言</span></h2><p>针对创新APP框架中的Service层的设计，研究了几款 IOC 框架（Service框架）。并尝试对两款 IOC 框架的 <code>生命周期管理</code>、<code>循环引用处理</code>、<code>配置方式</code>等能力做了对比分析（见本文“对比能力”部分）。希望对 Service 的设计有所帮助。<br>周一(12.10日)上午晨会时，已经和 haven、kelvin 、heysea 同步了研究分析的结果，并确定如下4想需要细化的内容：</p>
 <ol>
 <li>接口的自动类型转换。</li>
@@ -467,8 +483,6 @@
 <h3><span id="fiery-crucible">Fiery Crucible</span></h3><p> is also an excellent light-weight (just one file) and very straight-forward DI library for Swift.</p>
 <h3><span id="typhoon-swift">Typhoon Swift</span></h3><p> is available! It uses ‘compile-time’ code generation.</p>
 <h3><span id="微软的abpunity也在用">微软的ABP（Unity也在用？）</span></h3>
-          
-        
       
     </div>
 
@@ -491,205 +505,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/13/My-new-post/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="richardcliu(刘畅)">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="理查德的编码之道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/12/13/My-new-post/" class="post-title-link" itemprop="http://yoursite.com/index.html">Service框架中循环引用的解决办法</a>
-              
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2018/12/13/My-new-post/" rel="next" title="Service框架中循环引用的解决办法">
+                <i class="fa fa-chevron-left"></i> Service框架中循环引用的解决办法
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2018-12-13 21:39:34 / Updated at: 22:11:05" itemprop="dateCreated datePublished" datetime="2018-12-13T21:39:34+08:00">2018-12-13</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <!-- toc -->
-<ul>
-<li><a href="#前言">前言</a></li>
-<li><a href="#1-循环引用的产生">1. 循环引用的产生</a></li>
-<li><a href="#2-循环引用所导致的问题">2. 循环引用所导致的问题</a></li>
-<li><a href="#3-举一个栗子">3. 举一个栗子</a></li>
-<li><a href="#4-循环引用的检测">4. 循环引用的检测</a></li>
-<li><a href="#5-循环引用的打破">5. 循环引用的打破</a><ul>
-<li><a href="#51-使用setter方法">5.1 使用Setter方法</a></li>
-<li><a href="#52-使用延迟构造方法">5.2 使用延迟构造方法</a></li>
-<li><a href="#53-使用懒加载">5.3 使用懒加载</a></li>
-</ul>
-</li>
-<li><a href="#6-总结">6. 总结</a></li>
-</ul>
-<!-- tocstop -->
-<h2><span id="前言">前言</span></h2><blockquote>
-<p>最近在开发Service框架过程中，讨论到了<code>循环引用</code>问题。希望借鉴成熟的IOC框架对于这一问题的解决办法，<strong>主要通过阅读spring官方文档和源码</strong>以及简单实验考察循环引用的检测、打破方法。希望对项目中service框架的设计有所帮助。</p>
-</blockquote>
-<h2><span id="1-循环引用的产生">1. 循环引用的产生</span></h2><p>在目前的IOC框架中，存在不少依赖关系。<br>如一个最简单的依赖关系，A依赖B，B反过来又依赖A：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Bean A → Bean B → Bean A  <span class="comment">//一个循环依赖的例子</span></span><br></pre></td></tr></table></figure></p>
-<p>又或者是诸如下构成环形的复杂关系：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Bean A → Bean B → Bean C → Bean D → Bean E → Bean A   <span class="comment">//一个更加复杂的循环依赖</span></span><br></pre></td></tr></table></figure></p>
-<p>这种依赖被视为一个<code>循环引用</code>。</p>
-<h2><span id="2-循环引用所导致的问题">2. 循环引用所导致的问题</span></h2><p>在IOC框架加载服务的过程中，其会<code>先创建服务所依赖的服务</code>。例如如下这个case中：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Bean A → Bean B → Bean C</span><br></pre></td></tr></table></figure></p>
-<p>IOC 框架会先创建<strong>C</strong>,然后再创建<strong>B</strong>(并且将C注入到B中)。最后再创建<strong>A</strong>（并将B注入到A中）。这里有一个创建对象的先后关系。<br>但当循环引用发生之后，<code>IOC框架就不知道哪一个对象应该第一个创建出来</code>。在这种情况下， 如 spring 这样的框架将会抛出一个<em>BeanCurrentlyInCreationException</em>异常。</p>
-<h2><span id="3-举一个栗子">3. 举一个栗子</span></h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IA</span> </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IB</span> </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AImpl</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">private</span> IB ib;</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">AImpl</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.ib = (IB)ServiceFactory.getService(<span class="string">"BImpl"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BImpl</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">private</span> IA ia;</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">BImpl</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.ia = (IA)ServiceFactory.getService(<span class="string">"AImpl"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>之后我们用一个<strong>工厂方法</strong>将 AImpl 和 BImpl 这两个实现类包装起来。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span>  <span class="class"><span class="keyword">class</span> <span class="title">ServiceFactory</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Object <span class="title">getService</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (str.equals(<span class="string">"AImpl"</span>))</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> AImpl();</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (str.equals(<span class="string">"BImpl"</span>))</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> BImpl();</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>虽说上述代码并没有语法上的错误， 但是我们已经可以明显的感觉到，在构造函数中已经形成了一个递归调用。</p>
-<p>有了基本的声明和实现， 在主函数中我们开始具体实例化这个类。如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IA a = ServiceFactory.getService(<span class="string">"AImpl"</span>); <span class="comment">// 此时代码将无限递归执行下去。</span></span><br></pre></td></tr></table></figure>
-<p>查看上述代码的完整实现请查看链接 [<a href="_attachment/CircleDepends.java">Java Demo Code</a>]。</p>
-<h2><span id="4-循环引用的检测">4. 循环引用的检测</span></h2><p>循环引用的发生往往是<strong>隐式的</strong>，因此这一关系发生之后，往往还需要通知上层业务。否则程序可能无限递归执行下去并最终出现栈溢出等异常。这里 spring 的检测方法比较简单，这边我们主要看一下单例bean的构造过程。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// DefaultSingletonBeanRegistry.java</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 首先有一个Set， 用于保存所有'正在创建'的单例</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> Set&lt;String&gt; singletonsCurrentlyInCreation =</span><br><span class="line">        Collections.newSetFromMap(<span class="keyword">new</span> ConcurrentHashMap&lt;&gt;(<span class="number">16</span>));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建过程中可以通过此方法检测</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isSingletonCurrentlyInCreation</span><span class="params">(String beanName)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.singletonsCurrentlyInCreation.contains(beanName);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// FactoryBeanRegistrySupport.java</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 如果创建objcet失败，并且当前bean是一个正在创建的对象，则抛出异常。</span></span><br><span class="line"><span class="keyword">if</span> (object == <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (isSingletonCurrentlyInCreation(beanName)) &#123; <span class="comment">// 判断是不是一个正在创建的对象</span></span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BeanCurrentlyInCreationException( <span class="comment">// 抛出循环引用的异常</span></span><br><span class="line">                beanName, <span class="string">"FactoryBean which is currently in creation returned null from getObject"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    object = <span class="keyword">new</span> NullBean();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>对此，我们也完全可以模仿上述方法，通过一个Set集合来<strong>检测构造中的服务</strong>。如下是实现这一方法的伪代码：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span>  <span class="class"><span class="keyword">class</span> <span class="title">ServiceFactory</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 构造一个用于保存Service的set。</span></span><br><span class="line">    <span class="keyword">private</span> Set&lt;String&gt; serviceIDSet = <span class="keyword">new</span> HashSet&lt;String&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Object <span class="title">getService</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 如果对象正在构造过程中，则抛出异常</span></span><br><span class="line">    <span class="keyword">if</span> (serviceIDSet.contains(str))&#123;    </span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"BeanCurrentlyInCreationException exception !!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    serviceIDSet.add(str);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 再开始构造</span></span><br><span class="line">    Object obj = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (str.equals(<span class="string">"AImpl"</span>))</span><br><span class="line">        obj = <span class="keyword">new</span> AImpl();</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (str.equals(<span class="string">"BImpl"</span>))</span><br><span class="line">        obj = <span class="keyword">new</span> BImpl();</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        obj = <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 构造完成之后把当前Service从set中拿出来</span></span><br><span class="line">    serviceIDSet.remove(str);</span><br><span class="line">    <span class="keyword">return</span> obj;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>如果此时有循环引用的对象正在创建， Service框架在创建过程中将停止创建过程。并抛出一个异常，通知上层应用者修改代码。</p>
-<h2><span id="5-循环引用的打破">5. 循环引用的打破</span></h2><p>在了解清楚了问题的原因之后，我们来尝试一下打破循环引用的一些方法。</p>
-<h3><span id="51-使用setter方法">5.1 使用Setter方法</span></h3><p>打破循环引用最简单的办法是使用Setter方法，分别构造完两个对象，并在最终将依赖关系通过setter方法建立起来。如下代码展示了在BImpl这一实现类的构造阶段中去除对AImpl的依赖关系。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IA</span> </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IB</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setIA</span><span class="params">(IA ia)</span> </span>; <span class="comment">//这里要增加一个接口。</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AImpl</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">private</span> IB ib;</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">AImpl</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.ib = (IB)ServiceFactory.getService(<span class="string">"BImpl"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BImpl</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">private</span> IA ia;</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">BImpl</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 这一句就不要了，以免循环依赖</span></span><br><span class="line">        <span class="comment">//this.ia = (IA)ServiceFactory.getService("AImpl");</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 这里提供一个set方法， 等IA创建好之后再set进来。</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setIA</span><span class="params">(IA ia)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.ia = ia;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>当然在这里使用的时候也会略有变化，且外部使用者需要知道IB中需要显示的调用setIA()这一方法：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">IA a = ServiceFactory.getService(<span class="string">"AImpl"</span>); </span><br><span class="line">IB b = ServiceFactory.getService(<span class="string">"BImpl"</span>);</span><br><span class="line"></span><br><span class="line">b.setIA(a); <span class="comment">// 外部创建好之后显示的调用一下set方法</span></span><br></pre></td></tr></table></figure></p>
-<h3><span id="52-使用延迟构造方法">5.2 使用延迟构造方法</span></h3><p>打破循环引用的第二个方法是使用延迟构造方法。其过程主要是将两个实现类的构造过程从getService的递归调用中抽出来。这种实现也比较简单，下面是一个简单的例子：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IA</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">Init</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IB</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">Init</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AImpl</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">private</span> IB ib;</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">Init</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.ib = (IB)ServiceFactory.getService(<span class="string">"BImpl"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BImpl</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">private</span> IA ia;</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">Init</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.ia = (IA)ServiceFactory.getService(<span class="string">"AImpl"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在使用过程中，我们需要将构造过程进行一个简单的拆分。先getService将对象构造出来。 再通过Init建立出真正的依赖关系。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">IA a = ServiceFactory.getService(<span class="string">"AImpl"</span>); </span><br><span class="line">IB b = ServiceFactory.getService(<span class="string">"BImpl"</span>);</span><br><span class="line"></span><br><span class="line">a.init();</span><br><span class="line">b.init();</span><br></pre></td></tr></table></figure>
-<h3><span id="53-使用懒加载">5.3 使用懒加载</span></h3><p>在spring中，可以通过如下anotation，实现CircularDependencyB这个实现类的懒加载。它的实质是创建一个B的proxy，注入到目标属性中。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CircularDependencyA</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">private</span> CircularDependencyB circB;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 如下，这个@lazy的 CircularDependencyB 会被注入成一个proxy。</span></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">CircularDependencyA</span><span class="params">(@Lazy CircularDependencyB circB)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.circB = circB;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>同样的，我们在自己的项目中也可以实现一个类似的方案。 这里我们通过javax.inject.Provider这个接口来实现这一个功能。具体代码如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BImpl</span> <span class="keyword">extends</span> <span class="title">Service</span> <span class="keyword">implements</span> <span class="title">IA</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Provider&lt;IA&gt; ia = <span class="keyword">new</span> Provider&lt;IA&gt;() &#123;</span><br><span class="line">        <span class="keyword">private</span> IA aImpl = <span class="keyword">null</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> IA <span class="title">get</span><span class="params">()</span> </span>&#123; <span class="comment">// AImpl的创建过程放到get()方法中。</span></span><br><span class="line">            <span class="keyword">if</span> (aImpl == <span class="keyword">null</span>) &#123;</span><br><span class="line">                aImpl = GlobalContext.getAppInterface().getService(IA.IID);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> aImpl;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">BImpl</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(<span class="string">"BImpl"</span>);</span><br><span class="line">        <span class="comment">// 这里就不要这么写了，去掉这里的循环引用。</span></span><br><span class="line">        <span class="comment">//ia = GlobalContext.getAppInterface().getService(IA.IID);</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>当然这一方法，除了初始化的代码也不太美观。在裸写过程中，最大的问题是调用阶段会稍显麻烦一些，因为每次需要调用一下get()方法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BImpl</span> <span class="keyword">extends</span> <span class="title">Service</span> <span class="keyword">implements</span> <span class="title">IA</span></span>&#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">funcUseA</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 相对于原来的ia.func()这样的调用，要多一侧get()的调用，以实现懒加载。</span></span><br><span class="line">        ia.get().func(); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2><span id="6-总结">6. 总结</span></h2><p>在讨论完循环引用的检测和打破方法后，我们回过头来看一下业内对循环引用的一些看法和解决思路。 baeldung这一网站上，关于循环引用的讨论中有如下结论： </p>
-<blockquote>
-<p>There are many ways to deal with circular dependencies in Spring. <strong>The first thing to consider is to redesign your beans</strong> so there is no need for circular dependencies: they are usually a symptom of a design that can be improved.<br>But if you absolutely need to have circular dependencies in your project, you can follow some of the workarounds suggested here.<br><strong>The preferred method is using setter injections</strong>. But there are other alternatives, generally based on stopping Spring from managing the initialization and injection of the beans, and doing that yourself using one strategy or another.<br><a href="https://www.baeldung.com/circular-dependencies-in-spring" target="_blank" rel="noopener">https://www.baeldung.com/circular-dependencies-in-spring</a></p>
-</blockquote>
-<p>因此，在这里我们也可以总结出一套处理循环引用的思路：<br>首先，<code>从设计上考虑重新划分个模块的职责和依赖关系</code>，循环引用的产生大多数情况下是服务架构依赖关系不合理导致的。其次，<code>若是一定要处理循环引用，则考虑setter或者延迟构造方法等方法解决</code>，setter是上述博文中作者较为推荐的方法。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -699,14 +536,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -727,8 +565,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -772,6 +619,22 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">Spring</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">IOC 依赖注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">AOP 切面编程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.3.</span> <span class="nav-text">服务动态绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.4.</span> <span class="nav-text">参考链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">Typhone</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">IOC 依赖注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">类型检查</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.3.</span> <span class="nav-text">配置文件注入</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">对比能力</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.1.</span> <span class="nav-text">接口绑定阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.2.</span> <span class="nav-text">管理生命周期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.3.</span> <span class="nav-text">处理循环引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.4.</span> <span class="nav-text">主要功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.5.</span> <span class="nav-text">配置方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.6.</span> <span class="nav-text">anotation 注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.7.</span> <span class="nav-text">多context的支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.8.</span> <span class="nav-text">compile-time checking</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.9.</span> <span class="nav-text">对比汇总</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">Firebase</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.2.</span> <span class="nav-text">视频演示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.3.</span> <span class="nav-text">具体使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.4.</span> <span class="nav-text">service的实现方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">其他IOC库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">6.1.</span> <span class="nav-text">Fiery Crucible</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">6.2.</span> <span class="nav-text">Typhoon Swift</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">6.3.</span> <span class="nav-text">微软的ABP（Unity也在用？）</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -900,6 +763,10 @@
   
 
   
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
 
   
 
